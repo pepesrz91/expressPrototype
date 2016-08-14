@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  script(type = 'text/javascript').
+    console.log("Que pedo perron!!!!!")
+    var xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function (){
+        if (xhr.readyState === 4){
+            console.log("Ready Fucker");
+        }
+
+    }
